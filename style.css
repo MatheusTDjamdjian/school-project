@@ -49,28 +49,28 @@ body {
     }
 }
 
-.carousel {
+.carrossel {
     position: relative;
     width: 100%;
     height: 60vh; /* Ajuste conforme necessário */
     overflow: hidden;
 }
 
-.carousel-inner {
+.carrossel-inner {
     display: flex;
     width: 300%;
     transition: transform 0.5s ease;
 }
 
-.carousel-item {
+.carrossel-item {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carrossel-control-prev,
+.carrossel-control-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -82,10 +82,12 @@ body {
     padding: 10px;
 }
 
-.carousel-control-prev {
-    left: 10px;
+.carrossel-control-prev {
+    top: 23vw;
+    left: 50px;
 }
 
-.carousel-control-next {
-    right: 10px;
+.carrossel-control-next {
+    top: 23vw;
+    right: 50px;
 }

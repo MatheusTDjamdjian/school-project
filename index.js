@@ -1,7 +1,7 @@
 let currentSlide = 0;
 
     function showSlide(index) {
-        const slides = document.querySelectorAll('.carousel-item');
+        const slides = document.querySelectorAll('.carrossel-item');
         if (index >= slides.length) {
             currentSlide = 0;
         } else if (index < 0) {
@@ -10,7 +10,7 @@ let currentSlide = 0;
             currentSlide = index;
         }
         const offset = -currentSlide * 100;
-        document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+        document.querySelector('.carrossel-inner').style.transform = `translateX(${offset}%)`;
     }
 
     function nextSlide() {
