@@ -53,44 +53,49 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-  }
+}
 
-  .carousel-slide {
-    width: 100%;
-    height: 88vh; 
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 88vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
 
-  .carousel-slide:nth-child(1) {
+.carousel-slide:nth-child(1) {
     background-image: url("img/um.jpg");
-  }
-  .carousel-slide:nth-child(2) {
+}
+.carousel-slide:nth-child(2) {
     background-image: url("img/dois.jpg");
-  }
-  .carousel-slide:nth-child(3) {
+}
+.carousel-slide:nth-child(3) {
     background-image: url("img/tres.jpg");
-  }
-  .carousel-slide:nth-child(4) {
+}
+.carousel-slide:nth-child(4) {
     background-image: url("img/quatro.jpg");
-  }
-  .carousel-slide:nth-child(5) {
+}
+.carousel-slide:nth-child(5) {
     background-image: url("img/cinco.jpg");
-  }
-  .carousel-slide:nth-child(6) {
+}
+.carousel-slide:nth-child(6) {
     background-image: url("img/seis.jpg");
-  }
+}
 
-  .carousel-nav {
+.carousel-nav {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-  }
+}
 
-  .carousel-nav button {
+.carousel-nav button {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -98,13 +103,13 @@ body {
     margin: 0 10px;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
 
-  .carousel-nav button:hover {
+.carousel-nav button:hover {
     background-color: rgba(0, 0, 0, 0.7);
-  }
+}
 
-  .carousel-nav button:disabled {
+.carousel-nav button:disabled {
     opacity: 0.5;
     cursor: default;
-  }
+}

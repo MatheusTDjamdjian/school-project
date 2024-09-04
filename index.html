@@ -7,29 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <div class="div-header">
-            <p class="title">Feira de profissões 2024</p>
-            <img src="img/delta2.png" alt="">
+        <p class="title">Feira de profissões 2024</p>
+        <img src="img/delta2.png" alt="">
     </div>
     <div>
-        <div class="content">
-            <div class="carousel-container">
-                <div>
-                  <div class="carousel-slide"></div>
-                  <div class="carousel-slide"></div>
-                  <div class="carousel-slide"></div>
-                  <div class="carousel-slide"></div>
-                  <div class="carousel-slide"></div>
-                  <div class="carousel-slide"></div>
-                </div>
-            
-                <div class="carousel-nav">
-                  <button id="prevBtn" disabled>Previous</button>
-                  <button id="nextBtn">Next</button>
-                </div>
-              </div>
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide" style="background-image: url('img/um.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('img/dois.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('img/tres.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('img/quatro.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('img/cinco.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('img/seis.jpg');"></div>
+            </div>
+            <div class="carousel-nav">
+                <button id="prevBtn" disabled>Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
