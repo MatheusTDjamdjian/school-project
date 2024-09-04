@@ -1,22 +1,24 @@
-let currentSlide = 0;
+const carouselTrack = document.getElementById("carouselTrack");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
 
-    function showSlide(index) {
-        const slides = document.querySelectorAll('.carrossel-item');
-        if (index >= slides.length) {
-            currentSlide = 0;
-        } else if (index < 0) {
-            currentSlide = slides.length - 1;
-        } else {
-            currentSlide = index;
-        }
-        const offset = -currentSlide * 100;
-        document.querySelector('.carrossel-inner').style.transform = `translateX(${offset}%)`;
+    let currentSlide = 0;
+    const slideWidth = carouselTrack.children[0].offsetWidth;
+
+    function updateCarousel() {
+      carouselTrack.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      prevBtn.disabled = currentSlide === 0;
+      nextBtn.disabled = currentSlide === carouselTrack.children.length - 1;
     }
 
-    function nextSlide() {
-        showSlide(currentSlide + 1);
-    }
+    nextBtn.addEventListener("click", () => {
+      currentSlide++;
+      updateCarousel();
+    });
 
-    function prevSlide() {
-        showSlide(currentSlide - 1);
-    }
+    prevBtn.addEventListener("click", () => {
+      currentSlide--;
+      updateCarousel();
+    });
+
+    updateCarousel();
