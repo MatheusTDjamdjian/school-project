@@ -21,14 +21,21 @@ body {
     display: flex;
     height: 12vh;
     width: auto;
-    background-color: #E39EC1;
+    background-color: #CBA47E;
+}
+
+.introduction {
+    margin: 5vh;
+    color: #6F1D1B;
+    font-family: "Nerko One", cursive;
+    font-size: 25px;
 }
 
 .title {
     color: black;
     font-family: "Nerko One", cursive;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-top: 4vh;
     margin-left: auto;
